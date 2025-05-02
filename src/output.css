@@ -926,6 +926,20 @@ video {
   transition-duration: 300ms;
 }
 
+#menuButton {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #menuButton {
+    display: flex;
+  }
+
+  #desktopNav {
+    display: none !important;
+  }
+}
+
 .hover\:bg-\[\#002B4C\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 43 76 / var(--tw-bg-opacity, 1));

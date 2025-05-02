@@ -23,3 +23,15 @@
         @apply top-1/2 -rotate-45 translate-y-0;
     }
 }
+
+#menuButton {
+    display: none;
+}
+@media (max-width: 800px) {
+    #menuButton {
+        display: flex;
+    }
+    #desktopNav {
+        display: none !important;
+    }
+}
