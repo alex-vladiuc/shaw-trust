@@ -7,21 +7,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
-<header class="bg-[#003865] text-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-3">
-            <img src="ShawTrustLogo.png" height="62" width="175" alt="Shaw Trust Logo" class="mr-2">
-        </div>
-        <nav>
-            <ul class="flex gap-6 text-sm">
-                <li><a href="index.html" class="hover:text-[#00A9A5]">Home</a></li>
-                <li><a href="collections.html" class="hover:text-[#00A9A5]">Collections</a></li>
-                <li><a href="deliveries.html" class="hover:text-[#00A9A5]">Deliveries</a></li>
-                <li><a href="giftaid.html" class="hover:text-[#00A9A5]">Gift Aid</a></li>
-            </ul>
+<header class="bg-[#003865] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <img src="ShawTrustLogo.png" alt="Shaw Trust Logo" class="h-10" />
+
+        <!-- Hamburger button -->
+        <button id="menuButton" class="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
+            <span class="block h-0.5 bg-white transition-transform duration-300 origin-top-left"></span>
+            <span class="block h-0.5 bg-white transition-opacity duration-300"></span>
+            <span class="block h-0.5 bg-white transition-transform duration-300 origin-bottom-left"></span>
+        </button>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex space-x-6 text-white font-medium">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="gift-aid.html" class="hover:text-gray-300">Gift Aid</a>
+            <a href="collections.html" class="hover:text-gray-300">Collections</a>
+            <a href="deliveries.html" class="hover:text-gray-300">Deliveries</a>
         </nav>
     </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileMenu" class="md:hidden hidden flex-col bg-[#003865] px-4 pb-4">
+        <a href="index.html" class="py-2 text-white border-b border-white/20">Home</a>
+        <a href="gift-aid.html" class="py-2 text-white border-b border-white/20">Gift Aid</a>
+        <a href="collections.html" class="py-2 text-white border-b border-white/20">Collections</a>
+        <a href="deliveries.html" class="py-2 text-white">Deliveries</a>
+    </div>
 </header>
+
 
 <main class="py-12 px-4 max-w-4xl mx-auto">
     <h1 class="text-3xl font-bold text-[#003865] mb-4">Gift Aid Registration</h1>

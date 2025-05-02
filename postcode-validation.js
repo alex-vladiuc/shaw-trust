@@ -61,3 +61,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
+const menuButton = document.getElementById('menuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+const [bar1, bar2, bar3] = menuButton.querySelectorAll('span');
+
+menuButton.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+// Animate lines into an X
+bar1.classList.toggle('rotate-45');
+bar1.classList.toggle('translate-y-[6px]');
+
+bar2.classList.toggle('opacity-0');
+
+bar3.classList.toggle('-rotate-45');
+bar3.classList.toggle('-translate-y-[6px]');
+});
+
+
