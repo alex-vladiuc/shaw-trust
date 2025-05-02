@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shaw Trust Sittingbourne</title>
     <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="Styles.css">
 </head>
 <body class="bg-gray-50 text-gray-900">
 <header class="bg-[#003865] text-white relative z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <img src="ShawTrustLogo.png" alt="Shaw Trust Logo" class="h-10" />
+        <a href="index.html"><img src="ShawTrustLogo.png" alt="Shaw Trust Logo" class="h-10" /></a>
 
         <!-- Desktop Navigation -->
         <nav id="desktopNav" class="space-x-6 font-medium hidden-desktop">
             <a href="index.html" class="hover:text-gray-300">Home</a>
-            <a href="gift-aid.html" class="hover:text-gray-300">Gift Aid</a>
+            <a href="giftaid.html" class="hover:text-gray-300">Gift Aid</a>
             <a href="collections.html" class="hover:text-gray-300">Collections</a>
             <a href="deliveries.html" class="hover:text-gray-300">Deliveries</a>
         </nav>
@@ -31,7 +30,7 @@
     <!-- Mobile Dropdown Menu -->
     <div id="mobileMenu" class="hidden flex flex-col items-center gap-3 bg-[#003865] px-4 py-4 text-white text-lg">
     <a href="index.html" class="hover:underline">Home</a>
-        <a href="gift-aid.html" class="hover:underline">Gift Aid</a>
+        <a href="giftaid.html" class="hover:underline">Gift Aid</a>
         <a href="collections.html" class="hover:underline">Collections</a>
         <a href="deliveries.html" class="hover:underline">Deliveries</a>
     </div>
@@ -69,6 +68,6 @@
     document.getElementById("donation-status").textContent =
         acceptingDonations ? "✅ We are currently accepting donations!" : "❌ Donations are currently paused.";
 </script>
-<script src="postcode-validation.js"></script>
+<script src="form-management.js"></script>
 </body>
 </html>

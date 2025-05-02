@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Staff Portal - Shaw Trust</title>
+    <link rel="stylesheet" href="src/output.css">
+    <script src="https://kit.fontawesome.com/540a90ac62.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 flex h-screen">
+
+<!-- Sidebar -->
+<aside class="w-64 bg-[#003865] text-white flex flex-col px-4 py-6">
+    <img src="ShawTrustLogo.png" class="mb-4 mx-auto h-20"  alt="Shaw Trust Logo" />
+    <nav class="flex-1 space-y-4">
+        <a href="#" class="block py-2 px-4 rounded hover:bg-[#002B4C]">Dashboard</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-[#002B4C]">Gift Aid Forms</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-[#002B4C]">Collection Requests</a>
+        <a href="#" class="block py-2 px-4 rounded hover:bg-[#002B4C]">Delivery Management</a>
+    </nav>
+    <div class="mt-auto pt-6">
+        <button class="block py-2 px-4 rounded hover:bg-[#002B4C]">
+            <i class="fa-solid fa-right-from-bracket p-2"></i>
+            Log out
+        </button>
+    </div>
+</aside>
+
+<!-- Main Content -->
+<main class="flex-1 p-8 overflow-y-auto">
+    <h1 class="text-3xl font-bold mb-6">Welcome, Staff Member</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Gift Aid Card -->
+        <div class="bg-white shadow rounded p-6 text-center">
+            <a href="#">
+                <i class="fas fa-hand-holding-heart fa-3x text-[#003865] mb-4"></i>
+                <h2 class="text-xl font-semibold">Unread Gift Aid Forms</h2>
+            </a>
+            <p id="unreadCount" class="text-2xl font-bold mt-2 text-[#003865]">0</p>
+        </div>
+
+
+
+        <!-- Collection Requests Card -->
+        <a href="#">
+            <div class="bg-white shadow rounded p-6 text-center">
+                <i class="fas fa-truck-loading fa-3x text-[#003865] mb-4"></i>
+                <h2 class="text-xl font-semibold">Collections to Sort</h2>
+                <p class="text-2xl font-bold mt-2 text-[#003865]">3</p>
+            </div>
+        </a>
+
+        <!-- Delivery Overview Card -->
+        <a href="#">
+            <div class="bg-white shadow rounded p-6 text-center">
+                <i class="fas fa-shipping-fast fa-3x text-[#003865] mb-4"></i>
+                <h2 class="text-xl font-semibold">Deliveries to Sort</h2>
+                <p class="text-2xl font-bold mt-2 text-[#003865]">4</p>
+            </div>
+        </a>
+    </div>
+</main>
+<script src="backsite-forms.js" defer></script>
+</body>
+</html>
