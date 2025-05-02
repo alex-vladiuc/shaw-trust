@@ -11,15 +11,15 @@
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <img src="ShawTrustLogo.png" alt="Shaw Trust Logo" class="h-10" />
 
-        <!-- Hamburger button -->
-        <button id="menuButton" class="md:hidden flex flex-col justify-between w-6 h-5 focus:outline-none">
+        <!-- Hamburger Button (always visible, shown only below 800px via CSS) -->
+        <button id="menuButton" class="hamburger w-6 h-5 flex flex-col justify-between focus:outline-none">
             <span class="block h-0.5 bg-white transition-transform duration-300 origin-top-left"></span>
             <span class="block h-0.5 bg-white transition-opacity duration-300"></span>
             <span class="block h-0.5 bg-white transition-transform duration-300 origin-bottom-left"></span>
         </button>
 
-        <!-- Desktop nav -->
-        <nav class="hidden md:flex space-x-6 text-white font-medium">
+        <!-- Navigation Links (desktop only) -->
+        <nav id="desktopNav" class="space-x-6 text-white font-medium hidden">
             <a href="index.html" class="hover:text-gray-300">Home</a>
             <a href="gift-aid.html" class="hover:text-gray-300">Gift Aid</a>
             <a href="collections.html" class="hover:text-gray-300">Collections</a>
@@ -27,15 +27,14 @@
         </nav>
     </div>
 
-    <!-- Mobile nav -->
-    <div id="mobileMenu" class="md:hidden hidden flex-col bg-[#003865] px-4 pb-4">
+    <!-- Mobile Menu (only visible on small screens when toggled) -->
+    <div id="mobileMenu" class="hidden flex-col bg-[#003865] px-4 pb-4">
         <a href="index.html" class="py-2 text-white border-b border-white/20">Home</a>
         <a href="gift-aid.html" class="py-2 text-white border-b border-white/20">Gift Aid</a>
         <a href="collections.html" class="py-2 text-white border-b border-white/20">Collections</a>
         <a href="deliveries.html" class="py-2 text-white">Deliveries</a>
     </div>
 </header>
-
 
 <main class="py-12 px-4 max-w-3xl mx-auto">
     <h1 class="text-3xl font-bold text-[#003865] mb-6">Delivery Information</h1>

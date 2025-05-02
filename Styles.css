@@ -1,0 +1,24 @@
+@media (max-width: 800px) {
+    #menuButton {
+        display: flex;
+    }
+
+    #desktopNav {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) {
+    #menuButton {
+        display: none;
+    }
+
+    #desktopNav {
+        display: flex;
+    }
+
+    #mobileMenu {
+        display: none !important;
+    }
+}
+
