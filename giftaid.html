@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Aid Registration - Sittingbourne Shaw Trust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+<header class="bg-[#003865] text-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="ShawTrustLogo.png" height="62" width="175" alt="Shaw Trust Logo" class="mr-2">
+        </div>
+        <nav>
+            <ul class="flex gap-6 text-sm">
+                <li><a href="index.html" class="hover:text-[#00A9A5]">Home</a></li>
+                <li><a href="collections.html" class="hover:text-[#00A9A5]">Collections</a></li>
+                <li><a href="deliveries.html" class="hover:text-[#00A9A5]">Deliveries</a></li>
+                <li><a href="giftaid.html" class="hover:text-[#00A9A5]">Gift Aid</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="py-12 px-4 max-w-4xl mx-auto">
+    <h1 class="text-3xl font-bold text-[#003865] mb-4">Gift Aid Registration</h1>
+    <p class="mb-6 text-gray-700">If you're a UK taxpayer, we can claim an extra 25% on your donations at no extra cost to you. Fill in your details to register as a Gift Aider:</p>
+    <form id="giftAidForm" class="grid gap-4 bg-white p-6 rounded shadow">
+        <input type="text" placeholder="Full Name" class="p-3 border rounded" name="fullname" required />
+        <input type="text" placeholder="Address Line" class="p-3 border rounded" name="address" required />
+
+        <input type="text" placeholder="Postcode" class="p-3 border rounded" id="postcode" name="postcode" required />
+        <div id="postcodeFeedback" class="text-sm text-red-600 mb-2"></div>
+
+        <input type="email" placeholder="Email Address" class="p-3 border rounded" name="email" required />
+
+        <label class="inline-flex items-center">
+            <input type="checkbox" class="mr-2" required />
+            I am a UK taxpayer and would like Shaw Trust to claim Gift Aid on my donations.
+        </label>
+
+        <button type="submit" class="bg-[#003865] text-white py-2 px-4 rounded hover:bg-[#002B4C]">Register</button>
+    </form>
+</main>
+
+<footer class="bg-white py-6 mt-12 border-t text-sm text-center text-gray-500">
+    &copy; 2025 Shaw Trust - Sittingbourne. All rights reserved.
+</footer>
+<script src="postcode-validation.js"></script>
+</body>
+</html>
