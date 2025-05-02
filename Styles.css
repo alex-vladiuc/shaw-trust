@@ -1,24 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Responsive behavior */
+#menuButton {
+    display: none;
+}
 @media (max-width: 800px) {
     #menuButton {
         display: flex;
     }
-
     #desktopNav {
-        display: none;
-    }
-}
-
-@media (min-width: 801px) {
-    #menuButton {
-        display: none;
-    }
-
-    #desktopNav {
-        display: flex;
-    }
-
-    #mobileMenu {
         display: none !important;
     }
 }
+
+/* Hamburger transforms to X */
+
+
+
+
 

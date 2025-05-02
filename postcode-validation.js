@@ -64,21 +64,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 const menuButton = document.getElementById('menuButton');
 const mobileMenu = document.getElementById('mobileMenu');
-const [bar1, bar2, bar3] = menuButton.querySelectorAll('span');
-
-let isOpen = false;
 
 menuButton.addEventListener('click', () => {
-    isOpen = !isOpen;
+    menuButton.classList.toggle('open');
     mobileMenu.classList.toggle('hidden');
-
-    bar1.classList.toggle('translate-y-[6px]');
-    bar2.classList.toggle('opacity-0');
-    bar3.classList.toggle('-rotate-45');
-    bar3.classList.toggle('-translate-y-[6px]');
 });
+
+
+
+
 
 
 
